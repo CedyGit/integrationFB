@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <title>Facebook</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="img/facebook.png" alt="" class="logo">
+            <ul>
+                <li><i class="bi bi-bell"></i></li>
+                <li><i class="bi bi-inbox"></i></li>
+                <li><i class="bi bi-play"></i></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Rechercher">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsmenuToggle()">
+                <i class="bi bi-person"></i>
+            </div>
+        </div>
+
+        <!-- setting menu -->
+        <div class="settings-menu">
+
+             <!-- switch with dark and light mode -->
+             <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="img/profil.jpg" alt="">
+                    <div>
+                        <p>Miandra Harilala Cedric</p><br>
+                        <a href="">Voir vitre profil</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <i class="bi bi-back"></i>
+                    <div>
+                        <p>Donnée des Reactions</p><br>
+                        <a href="">Aidez-nous a donnee le maximum</a>
+                    </div>
+                </div>
+                <hr>
+                <!-- settings links -->
+                <div class="settings-links">
+                    <img src="img/reglages.png" alt="" class="settings-icon">
+                    <a href="">Parametre & Privacy <i class="bi bi-arrow-right" width="10px"></i></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/aidez-moi.png" alt="" class="settings-icon">
+                    <a href="">Aides & Support <i class="bi bi-arrow-right" width="10px"></i></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/nuit.png" alt="" class="settings-icon">
+                    <a href="">Affichage & Accessibilite<i class="bi bi-arrow-right" width="10px"></i></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/logout_5631841.png" alt="" class="settings-icon">
+                    <a href="">Deconnexion <i class="bi bi-arrow-right" width="10px"></i></a>
+                </div>
+            </div>
+          <!-- fin settings menu inner -->
+        </div>
+    </nav>
+    <!-- fin nav -->
+
+    <!-- main content -->
+    <div class="container">
+        <!-- left sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href=""><img src="img/rapport.png" alt="">Derniere Nouvelle</a>
+                <a href=""><img src="img/utilisateur.png" alt="">Amis</a>
+                <a href=""><img src="img/utilisateur.png" alt="">Groupe</a>
+                <a href=""><img src="img/market.png" alt="">MarketPlace</a>
+                <a href=""><img src="img/watch.png" alt="">Video</a>
+                <a href="">Voir plus</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Votre capture</p>
+                <a href=""><img src="img/profil.jpg" alt="">Developpeur Web</a>
+                <a href=""><img src="img/profil5.jpg" alt="">Designer</a>
+                <a href=""><img src="img/profil3.jpg" alt="">Back-end developpeur</a>
+                <a href=""><img src="img/profil.jpg" alt="">Front-end developpeur</a>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="img/plus.png" alt="">
+                    <p>Votre Story</p>
+                </div>
+           
+                <div class="story story2">
+                    <img src="img/profil2.jpeg" alt="">
+                    <p>Cedric</p>
+                </div>
+            
+                <div class="story story4">
+                    <img src="img/profil5.jpg" alt="">
+                    <p>Equipe</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="img/profil4.jpg" alt="">
+                    <p>Equipe</p>
+                </div>
+            </div>
+            <!-- fin story gallery -->
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="img/profil.jpg" alt="">
+                    <div>
+                        <p>Miandra Harilala Cedric</p>
+                        <small>Publique <i class="bi bi-caret-down-fill"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="Qu'est ce que vous pensez?"></textarea>
+                    <div class="add-post-links">
+                        <a href=""><i style="color: red;" class="bi bi-camera-video-fill"></i> Live</a>
+                        <a href=""><i style="color: forestgreen;" class="bi bi-camera-fill"></i> Photo/Video</a>
+                        <a href=""><i style="color: gold;" class="bi bi-emoji-smile-fill"></i> Feeling/Activite</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- fin write post container -->
+            <!-- post conatainer -->
+            <!-- post 1 -->
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profil.jpg" alt="">
+                        <div>
+                            <p>Miandra Harilala Cedric</p>
+                            <span>Aout 31 2023, 8:46 pm</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="bi bi-list-ul"></i></a>
+                </div>
+
+                <p class="post-text">C'est quoi votre motivation? <span>Focus on Your dream</span>, cela vas vous mener vers <span>votre avenir et vos reves.</span> <a href="https://www.openclassroom.com" target="_blank">#Apprenez les bases du developpement Web</a> Ou<a href="https://www.youtube.com" target="_blank"> #regarder des videos sur youtube.</a></p>
+                <!-- post image -->
+                <img src="img/profil2.jpeg" alt="" class="post-img">
+
+                <!-- post-row -->
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i style="color: #f70505;" class="bi bi-heart-fill"> 8K</i></div>
+                        <div><i class="bi bi-text-paragraph"> 52</i></div>
+                        <div><i class="bi bi-reply-fill"> 3</i></div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profil2.jpeg" alt=""> <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+            </div>
+           <!-- post 2 -->
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profil3.jpg" alt="">
+                        <div>
+                            <p>Princia</p>
+                            <span>Aout 25 2023, 5:46 pm</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="bi bi-list-ul"></i></a>
+                </div>
+
+                <p class="post-text">Appliquez ce que vous savez sur le <span>developpement web</span>, cela vas vous mener vers <span>votre avenir et vos reves.</span> <a href="https://www.openclassroom.com" target="_blank">#Apprenez les bases du developpement Web</a> Ou<a href="https://www.youtube.com" target="_blank"> #regarder des videos sur youtube.</a></p>
+                <!-- post image -->
+                <img src="img/profil3.jpg" alt="" class="post-img">
+
+                <!-- post-row -->
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i style="color: #1876f2;" class="bi bi-hand-thumbs-up-fill"> 120</i></div>
+                        <div><i class="bi bi-text-paragraph"> 52</i></div>
+                        <div><i class="bi bi-reply-fill"> 3</i></div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profil3.jpg" alt=""> <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- post 3 -->
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profil.jpg" alt="">
+                        <div>
+                            <p>My Team</p>
+                            <span>Aout 31 2023, 8:46 pm</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="bi bi-list-ul"></i></a>
+                </div>
+
+                <p class="post-text">Appliquez ce que vous savez sur le <span>developpement web</span>, cela vas vous mener vers <span>votre avenir et vos reves.</span> <a href="https://www.openclassroom.com" target="_blank">#Apprenez les bases du developpement Web</a> Ou<a href="https://www.youtube.com" target="_blank"> #regarder des videos sur youtube.</a></p>
+                <!-- post image -->
+                <img src="img/group.jpeg" alt="" class="post-img">
+
+                <!-- post-row -->
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i style="color: #f70505;" class="bi bi-heart-fill"> 45</i></div>
+                        <div><i class="bi bi-text-paragraph"> 2</i></div>
+                        <div><i class="bi bi-reply-fill"> 71</i></div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/group.jpeg" alt=""> <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- post 4 -->
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profil4.jpg" alt="">
+                        <div>
+                            <p>My Team</p>
+                            <span>Aout 31 2023, 8:46 pm</span>
+                        </div>
+                    </div>
+                    <a href=""><i class="bi bi-list-ul"></i></a>
+                </div>
+
+                <p class="post-text">Appliquez ce que vous savez sur le <span>developpement web</span>, cela vas vous mener vers <span>votre avenir et vos reves.</span> <a href="https://www.openclassroom.com" target="_blank">#Apprenez les bases du developpement Web</a> Ou<a href="https://www.youtube.com" target="_blank"> #regarder des videos sur youtube.</a></p>
+                <!-- post image -->
+                <img src="img/profil4.jpg" alt="" class="post-img">
+
+                <!-- post-row -->
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class="bi bi-hand-thumbs-up"> 45</i></div>
+                        <div><i class="bi bi-text-paragraph"> 2</i></div>
+                        <div><i class="bi bi-reply-fill"> 71</i></div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profil4.jpg" alt=""> <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                </div>
+            </div>
+             <!-- fin post container -->
+
+             <button type="button" class="load-more-btn">Voir Plus</button>
+
+        </div>
+        <!-- fin main content -->
+
+        <!-- right sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Evenement</h4>
+                <a href="">Voir Tout</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>25</h3>
+                    <span>Mars</span>
+                </div>
+                <div class="right-event">
+                    <h4>Reseaux Sociaux</h4>
+                    <p>Andriamihaja Keila</p>
+                    <a href="">plus d'Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>02</h3>
+                    <span>Mai</span>
+                </div>
+                <div class="right-event">
+                    <h4>Reseaux Sociaux</h4>
+                    <p>Fabrice BJ</p>
+                    <a href="">plus d'Info</a>
+                </div>
+            </div>
+
+            <!-- fin event -->
+         
+            <div class="sidebar-title">
+                <h4>Loisirs</h4>
+                <a href="">Close</a>
+            </div>
+            <img src="img/group.jpeg" alt="" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Message</h4>
+                <a href="">Cache la conversation</a>
+            </div>
+
+            <!-- online list -->
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/profil.jpg" alt="">
+                </div>
+                <p>Fabrice BJ</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/profil2.jpeg" alt="">
+                </div>
+                <p>Cedric</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/profil3.jpg" alt="">
+                </div>
+                <p>Princia</p>
+            </div>
+
+        </div>
+        <!-- fin right sidebar -->
+    </div>
+    <!-- fin container -->
+    <div class="footer">
+        <p>Copyright &copy; 2023 - MIANDRA Harilala Cedric</p>
+    </div>
+
+<!-- javascript -->
+<script src="script.js"></script>
+</body>
+</html>
